@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lavishly+Yours&family=Marck+Script&family=Quintessential&display=swap');
+::selection{
+    background-color: #14cf93;
+    color: #fff;
+}
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+    align-items: center;
+}
+.loader h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.loader .welcome {
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome::-webkit-scrollbar{
+    display: none;
+}
+.loader .welcome h1 i{
+    color: #14cf93;
+}
+.welcome h1 span{
+    display: inline-block;
+}
+.green{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #14cf93;
+    /* display: none; */
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+     background:linear-gradient(to bottom, rgb(253, 253, 200) 30%, #14cf93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* display: none; */
+}
+.home .home-container{
+    width: 75%;
+    height: 65%;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px 0 rgba(0,0,0,0.08);
+    overflow: hidden;
+    background-color: white;
+    
+
+}
+.home .home-container .left{
+    width: 50%;
+    height: 100%;
+  padding: 50px;
+}
+.home .home-container .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home .home-container .right{
+    width: 50%;
+    height: 100%;
+    padding: 35px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -12px 0 20px rgba(0,0,0,0.15);
+
+}
+.home .home-container .right h2{
+    font-size: 2.7vw;
+    color: #14213d;
+    margin-bottom: 20px;
+align-self: flex-start;
+}
+.home .home-container .right input{
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    outline: none;
+    color: #000;
+}
+.home .home-container .right button{
+    padding: 10px 20px;
+    width: 60%;
+    border: none;
+    background: #14cf93;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-align: center ;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(20, 207, 147,0.5);
+   transition: all linear 0.4s;
+}
+.home .home-container .right button:hover{
+    background-color: white;
+    color: #14cf93;
+    box-shadow: 0px 2px 5px#999;
+}
+
+.categoryPage{
+    width: 100%;
+    height: 100vh;
+   /* background: url("https://static.vecteezy.com/system/resources/previews/007/934/086/non_2x/abstract-purple-and-pink-gradient-waves-background-glowing-lines-on-purple-background-vector.jpg"); */
+   background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    /* display: none; */
+}
+.categoryPage .category-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+}
+.categoryPage h2{
+    font-size: 3.5vw;
+    color: #14213d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.categoryPage .category-container .category-box{
+    width: 180px;
+    height: 160px;
+    background-color:white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    transition: all linear 0.3s;
+    margin-right: 25px;
+    margin-top: 20px;
+   box-shadow: 0px 2px 5px #999;
+}
+.category-container .category-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #14cf93, 0 0 20px #14cf93, 0 0 20px #14cf93;
+}
+.category-box h4{
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2vw;
+    line-height: 13px;
+    margin-bottom: 20px;
+}
+.category-box img{
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+.quizPage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 235, 235);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.quizPage .quiz-container{
+    width: 55%;
+    background: rgba(255,255,255,0.7);
+    border-radius: 25px;
+  backdrop-filter: blur(20px);
+    box-shadow: 0 8px 25px 0 rgba(0,0,0,0.08);
+    text-align: center;
+    padding:30px 35px;
+    /* transition: all 0.3s ease-in-out; */
+}
+ .quiz-container h2{
+    font-size: 2.5vw;
+    color: #111;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+#optionEl{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+   
+    margin-bottom: 30px;
+}
+.option{
+    background:#e9f0fa;
+    padding: 15px 10px;
+    border-radius: 12px;
+    color: #111;
+    font-size: 1.5vw;
+    padding: 12px 0px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background linear 0.5s;
+}
+.option:hover{
+     background-color: #14cf93;
+    color: #fff;
+}
+.quiz-container button{
+    padding: 15px 50px;
+    border: none;
+     background: #14cf93;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center ;
+    display: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 3px 10px rgba(20, 207, 147,0.5);
+   transition: all linear 0.4s;
+}
+.quiz-container button:hover{
+    background-color: white;
+    color: #14cf93;
+    box-shadow: 0px 2px 5px#999;
+}
+
+.result{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.certificate{
+   width: 90%;
+   background: #fff;
+   padding:60px 70px;
+   border: 12px double gold;
+   box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+   text-align: center;
+   position: relative;
+   border-radius: 8px;
+}
+.certificate::before{
+    content: "";
+    position: absolute;
+    inset: 30px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    pointer-events: none;
+}
+h1{
+    font-size: 3.7vw;
+    color: #14213d;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 1.6vw;
+    color: #444;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.name{
+   font-family:"Lavishly Yours", cursive;
+    font-size: 3vw;
+    color: gold;
+    margin: 15px 0px 10px;
+    letter-spacing: 3px;
+}
+.divider{
+    width: 120px;
+    height: 3px;
+    background-color: gold;
+    margin: 10px auto;
+}
+.score{
+    font-size: 22px;
+    color: #333;
+}
+
+.details{
+    font-size: 2vw;
+    color: #333;
+    margin: 5px auto;
+}
+.course{
+    font-weight: 600;
+    font-size: 17px;
+    color: #14213d;
+    /* margin-top: 10px; */
+    letter-spacing: 1px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 80px;
+    font-size: 16px;
+}
+.bottom h5{
+    color: #14213d;
+    font-family: "Lavishly Yours", cursive;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.bottom p{
+    color: #14213d;
+}
+
+.line{
+    border-top: 1px solid #000;
+    width: 220px;
+    margin-bottom: 7px;
+}
+.seal{
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.seal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.green-text{
+    color: gold;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+#restartBtn{
+padding: 10px 27px;
+    border: none;
+     background: #14cf93;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center ;
+    /* display: none; */
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(20, 207, 147,0.5);
+   transition: all linear 0.4s;
+}
+#downloadBtn{
+padding: 10px 20px;
+    border: none;
+     background: #14cf93;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center ;
+    /* display: none; */
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(20, 207, 147,0.5);
+   transition: all linear 0.4s;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#restartBtn:hover{
+    background-color: white;
+    color: #14cf93;
+    box-shadow: 0px 2px 5px#999;
+}
+#downloadBtn:hover{
+    background-color: white;
+    color: #14cf93;
+    box-shadow: 0px 2px 5px#999;
+}
+
+
+@media (max-width:600px) {
+    .loader h1{
+    font-size: 5.5vw;
+    font-weight: 500;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.home-container .left{
+    display: none;
+}
+.home .home-container .right{
+    width: 100%;
+      padding: 35px;
+}
+.home .home-container .right h2{
+    font-size: 5.5vw;
+}
+.home .home-container .right input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 2.9vw;
+}
+.home .home-container .right button{
+    font-size: 3.3vw;
+    width: 70%;
+}
+.categoryPage{
+    gap: 5px;
+}
+.categoryPage .category-container{
+    width: 100%;
+    padding-left: 20px;
+}
+.categoryPage h2{
+    margin-bottom: 15px;
+    font-size: 6vw;
+    color: #14213d;
+}
+.categoryPage .category-container .category-box{
+    width: 110px;
+    height: 100px;
+    margin-top: 12px;
+}
+.category-box h4{
+    font-size: 3.9vw;
+   margin-top: 5px;
+}
+.category-box img{
+    width: 45%;
+}
+
+
+.quizPage .quiz-container{
+    width: 80%;
+    padding:30px 35px;
+}
+ .quiz-container h2{
+    font-size: 5.5vw;
+    margin-bottom: 30px;
+}
+#optionEl{
+    margin-bottom: 15px;
+}
+.option{
+    font-size: 3.4vw;
+}
+.quiz-container button{
+    padding: 15px 40px;
+    font-size: 3.4vw;
+}
+
+
+.certificate{
+   width: 95%;
+   border: 4px double gold;
+   border-radius: 5px;
+   padding: 10px 5px;
+}
+.certificate::before{
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+h1{
+    font-size: 5.5vw;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 2.7vw;
+  margin-top: 5px;
+}
+.name{
+    font-size: 5.2vw;
+    margin: 5px 0px 5px;
+}
+.divider{
+    width: 70px;
+    height: 1.5px;
+    margin: 5px auto;
+}
+.score{
+    font-size: 12px;
+}
+
+.details{
+    font-size: 3.5vw;
+    margin: 5px auto;
+}
+.course{
+    font-size: 15px;
+}
+.bottom{
+    margin-top: 10px;
+    padding: 0px 50px;
+    padding-right: 20px;
+    font-size: 10px;
+}
+.bottom h5{
+    font-size: 11px;
+}
+.bottom p{
+    color: #14213d;
+}
+
+.line{
+    border-top: 0.5px solid #000;
+    width: 70px;
+    margin-bottom: 0px;
+}
+.seal{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.green-text{
+    font-size: 12px;
+}
+
+#restartBtn{
+padding: 10px 27px;
+    font-size: 3.5vw;
+    margin-top: 70px;
+    box-shadow: 0px 2px 5px rgba(20, 207, 147,0.5);
+}
+#downloadBtn{
+    font-size: 3.5vw;
+    margin-top: 70px;
+    box-shadow: 0px 2px 5px rgba(20, 207, 147,0.5);
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz1 App</title>
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="quiz1.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+ <div class="main">
+<div class="loader">
+ <div class="welcome">
+  <h1> <span>Welcome</span> <span>to</span> <span>our</span> <span><i>quiz</i></span> <span>platform</span> </h1>
+ </div> 
+</div>
+<div class="green"></div>
+
+<div class="home">
+   <div class="home-container">
+    <div class="left">
+      <img src="https://assets.designtemplate.io/thu-jan-12-2023-9-41-am36984.webp" alt="">
+    </div>
+    <div class="right">
+     <h2>Registration</h2>
+     <input type="text" id="userName" placeholder="Full Name">
+      <input type="email" id="userEmail" placeholder="Email Address">
+      <input type="text" id="userAddress" placeholder="Address">
+       <input type="number" placeholder="Phone Number">
+       <button id="submitBtn">Submit</button>
+    </div>
+   </div>
+</div><!--home-->
+
+<div class="categoryPage">
+      <h2>Please Select Your Quiz Category</h2>
+  <div class="category-container">
+
+    <div class="category-box islamic" onclick="startQuiz('islamic')">
+      <img src="https://static.vecteezy.com/system/resources/previews/022/786/969/non_2x/3d-render-of-holy-quran-on-podium-display-suitable-for-ramadan-mubarak-or-islamic-illustration-free-png.png" alt="">
+      <h4>Islamic</h4>
+    </div>
+    <div class="category-box general" onclick="startQuiz('generel')">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/034/763/413/small/3d-kid-character-get-confused-when-reading-a-book-free-png.png" alt="">
+      <h4>General Knowledge</h4>
+  </div>
+  <div class="category-box science" onclick="startQuiz('science')">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/011/153/838/small/science-education-3d-illustrations-png.png" alt="">
+      <h4>Science</h4>
+  </div>
+  <div class="category-box mathematics" onclick="startQuiz('mathematics')">
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/mathematics-3d-icon-png-download-4298233.png" alt="">
+      <h4>Mathematics</h4>  
+  </div>
+    <div class="category-box technology" onclick="startQuiz('technology')"> >
+      <img src="https://static.vecteezy.com/system/resources/previews/027/113/274/non_2x/machine-learning-3d-illustration-png.png" alt="">
+      <h4>Technology</h4>  
+  </div>
+    <div class="category-box history" onclick="startQuiz('history')"> >
+      <img src="https://png.pngtree.com/png-vector/20231031/ourmid/pngtree-history-courses-business-discovery-png-image_10414814.png" alt="">
+      <h4>History</h4>  
+  </div>
+    <div class="category-box development" onclick="startQuiz('development')"> >
+      <img src="https://static.vecteezy.com/system/resources/previews/011/153/360/non_2x/3d-web-developer-working-on-project-illustration-png.png" alt="">
+      <h4>Web <br>development</h4>  
+  </div>
+</div>                                                                                               
+</div><!--categoryPage-->
+
+
+<div class="quizPage">
+   <div class="quiz-container">
+  <h2 id="questionEl"></h2>
+    <div id="optionEl">
+      
+    </div>
+    <button id="nextBtn">Next Question</button>
+   </div>
+</div><!--quizPage-->
+
+<div class="result">
+  <div class="certificate">
+    <h1>Certificate of Achievement</h1>
+    <h2>This is to certify that</h2>
+  <div class="name">Imran Mondal</div>
+
+<div class="divider"></div>
+
+<div class="details">from <span class="green-text">Dankuni</span> has successfully completed the course</div>
+<div class="course">- QUIZ COMPETITION -</div>
+<div class="score">with a score of <span class="green-text" id="score">8 out of 10</span></div>
+<div class="seal">
+  <img src="logo2.jpeg" alt="">
+</div>
+<div class="bottom">
+  <div>
+    <h5>Imran Mondal</h5>
+    <div class="line"></div>
+    <p>Authorize Signature</p>
+  </div>
+  <div>
+    <h5 id="date"></h5>
+    <div class="line"></div>
+  <p>Date</p>
+  </div>
+</div>
+</div>
+<div class="button-container">
+  <button id="restartBtn">Restart</button>
+<button id="downloadBtn">Download</button>
+</div>
+</div><!--result-->
+
+ </div><!--main-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="quiz1.js"></script>
+</body>
+</html>
