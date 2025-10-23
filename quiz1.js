@@ -21,7 +21,7 @@ tl.from(".loader .welcome h1 span",{
     ease:Power3.easeInOut
 })
 tl.to(".loader .welcome h1",{
-    y:"-100%",
+    y:"-120%",
     duration:1.3,
     ease:Circ.easeInOut
 })
@@ -1073,7 +1073,7 @@ let quizes = {
         },
         {
             question:"Which HTML tag is used to define an internal style sheet?",
-            options:["<style>","<css>","<script>","<link>"],
+            options:["style","css","script","link"],
             answer: 0
         },
         {   
